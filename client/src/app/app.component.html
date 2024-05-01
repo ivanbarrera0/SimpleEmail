@@ -1,0 +1,38 @@
+<title>Simple Email</title>
+
+<div class="context"> </div>
+
+
+<div class="area" >
+
+    <h1>Welcome to Simple Email</h1>
+    <br>
+    <img src="/assets/images/email.png" alt="mail" id="email_image">
+    <br>
+    <label for="email">Email: </label>
+    <br>
+    <input id="email" type="email" [(ngModel)]="email">
+    <br>
+    <label for="subject">Subject: </label>
+    <br>
+    <input id="subject" type="text" [(ngModel)]="subject">
+    <br>
+    <label for="message">Message: </label>
+    <br>
+    <textarea id="message" type="text" [(ngModel)]="message"></textarea>
+    <br>
+    <button (click)="sendMessage()">Submit</button>
+
+    <ul class="circles">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+    </ul>
+</div>
